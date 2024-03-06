@@ -109,7 +109,7 @@ h1,h2,h3{
 .header{
     position: relative;
     height: 95vh;
-    background: linear-gradient(rgba(52, 51, 51, 0.8) ,rgba(29, 28, 28, 0.804)) ,url('../img/Far.webp');
+    background: linear-gradient(rgba(52, 51, 51, 0.8) ,rgba(52, 50, 50, 0.752)) ,url('../img/Far.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -606,7 +606,7 @@ label{
         height: auto;
       } */ 
       .form-wrapper img{
-        height: 400px;
+        height: 300px;
       }
 }
 
