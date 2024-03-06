@@ -378,7 +378,9 @@ text-align: right;
 
 
 /* #####################Contact page############### */
-
+.form-wrapper{
+    display: flex;
+}
 .form{
     float: right;
     width: 49%;
@@ -485,7 +487,6 @@ label{
     cursor: pointer;
 }
 
-
 /* #################Media Queries##################### */
 
 @media (max-width: 500px){
@@ -544,7 +545,7 @@ label{
     height: auto;
   } */ 
   .form-wrapper img{
-    height: 400px;
+    height: 300px;
   }
 
 }
