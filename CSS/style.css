@@ -40,14 +40,13 @@ h1,h2,h3{
     font-weight: 500;
 }
 
-/* ##########Utility classes######### */
+/* ##########Utility classes#########*/
 
 .container{
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
-
 
 .lg-heading{
     font-size: 3.5rem;
@@ -118,6 +117,8 @@ h1,h2,h3{
 
 .navbar{
     padding: 1rem;
+    /* position: fixed;
+    top: 0; */
 }
 
 .navbar .nav-items{
