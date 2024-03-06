@@ -113,6 +113,7 @@ h1,h2,h3{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .navbar{
@@ -483,3 +484,134 @@ label{
     border: none;
     cursor: pointer;
 }
+
+
+/* #################Media Queries##################### */
+
+@media (max-width: 500px){
+  html{
+    font-size: 50%;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+
+  .navbar .nav-items , .navbar .logo{
+    float: none;
+  }
+
+  .row{
+    height: auto;
+    width: 100%;
+  }
+  .row .img-box,
+  .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .features .box-2,
+  .features .box-3{
+    margin-top: 7rem;
+  }
+
+  .cta-banner-left,
+  .cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form{
+    margin-top: -95rem;
+  }
+  /* .form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+
+  }
+  /* .form{
+    float: none;
+    width: 100%;
+    height: auto;
+  } */ 
+  .form-wrapper img{
+    height: 400px;
+  }
+
+}
+
+@media (min-width:501px) and (max-width:760px ){
+    
+    tml{
+        font-size: 50%;
+      }
+      p{
+        font-size: 1.8rem;
+      }
+    
+      .navbar .nav-items , .navbar .logo{
+        float: none;
+      }
+    
+      .row{
+        height: auto;
+        width: 100%;
+      }
+      .row .img-box,
+      .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .features .box-2,
+      .features .box-3{
+        margin-top: 7rem;
+      }
+    
+      .cta-banner-left,
+      .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      .form{
+        margin-top: -95rem;
+      }
+      /* .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    
+      }
+      /* .form{
+        float: none;
+        width: 100%;
+        height: auto;
+      } */ 
+      .form-wrapper img{
+        height: 400px;
+      }
+}
+
+
+
+
+
+
