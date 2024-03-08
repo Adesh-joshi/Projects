@@ -3,7 +3,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* ############## Html element styling#########*/
@@ -110,11 +111,14 @@ h1,h2,h3{
 .header{
     position: relative;
     height: 95vh;
+    background: -webkit-gradient(linear ,left top, left bottom ,from(rgba(52, 51, 51, 0.8)) ,to(rgba(52, 50, 50, 0.752))) ,url('../img/Far.webp');
+    background: -o-linear-gradient(rgba(52, 51, 51, 0.8) ,rgba(52, 50, 50, 0.752)) ,url('../img/Far.webp');
     background: linear-gradient(rgba(52, 51, 51, 0.8) ,rgba(52, 50, 50, 0.752)) ,url('../img/Far.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .navbar{
@@ -166,8 +170,12 @@ h1,h2,h3{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(39, 38, 38, 0.2)),to(rgba(44, 44, 44, 0.2)));
+    background: -o-linear-gradient(rgba(39, 38, 38, 0.2),rgba(44, 44, 44, 0.2));
     background: linear-gradient(rgba(39, 38, 38, 0.2),rgba(44, 44, 44, 0.2));
 }
 
@@ -189,7 +197,8 @@ h1,h2,h3{
 .row{
     height: 350px;
     background: #ffffff;
-    box-shadow: 0px 0px 20px 0px #00000042;
+    -webkit-box-shadow: 0px 0px 20px 0px #00000042;
+            box-shadow: 0px 0px 20px 0px #00000042;
 }
 .row1{
     margin-bottom: 10rem;
@@ -217,8 +226,10 @@ h1,h2,h3{
     display: inline-block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(2);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(2);
+            filter: brightness(2);
 }
 
 
@@ -233,7 +244,8 @@ h1,h2,h3{
     padding: 10rem 0;
 }
 .box-wrapper{
-    box-shadow: 5px 5px 20px 0px #00000073 ;
+    -webkit-box-shadow: 5px 5px 20px 0px #00000073 ;
+            box-shadow: 5px 5px 20px 0px #00000073 ;
 }
 .box{
     width: 33.333333333333%;
@@ -338,7 +350,8 @@ h1,h2,h3{
     background: #d4091a;
     color: #f4f4f4;
     padding: 1rem;
-    box-shadow: 5px 5px 10px #00000077;
+    -webkit-box-shadow: 5px 5px 10px #00000077;
+            box-shadow: 5px 5px 10px #00000077;
     margin-top: 3rem;
 }
 
@@ -381,6 +394,8 @@ text-align: right;
 
 /* #####################Contact page############### */
 .form-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .form{
@@ -429,7 +444,8 @@ text-align: right;
 .form-wrapper img{
     max-width: 45%;
     min-height:10rem ;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 25rem;
 }
 
@@ -483,7 +499,9 @@ label{
     font-size: 1.8rem;
     text-transform: uppercase;
     background: #e63946;
-    columns: #fff;
+    -webkit-columns: #fff;
+       -moz-columns: #fff;
+            columns: #fff;
     outline: none;
     border: none;
     cursor: pointer;
@@ -612,4 +630,3 @@ label{
         height: 300px;
       }
 }
-
