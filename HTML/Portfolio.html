@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <p class="logo"><img src="../img/Screenshot 2024-03-18 195631.png"alt="Logo"></p>
-                <ul>
-                    <li> <a href="#">Home</a></li>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
                     <li> <a href="#about">About</a></li>
                     <li> <a href="#services">Services</a></li>
                     <li> <a href="#portfolio">Portfolio</a></li>
                     <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Designer && Coder</p>
@@ -38,7 +40,6 @@
                     <p>
                         Adesh Joshi, a 19-year-old engineering student hailing from Nepal. Currently enrolled in Far-Western College, is navigating the intricate world of engineering, where my passion for problem-solving and innovation comes to life.
                     </p>
-
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links " onclick="opentab('experience')">Experience</p>
@@ -63,7 +64,7 @@
                             
                             <li><span>2080</span><br> C programming</li>
                             <li><span>2080</span><br> C++ programming </li>
-                            <li><span>2081</span><br> DSA (Data Structures and Algorithms) </li>
+                            <li><span>2081</span><br> DSA (Data Structures and Algorithms) [cont...] </li>
                             <li><span>2081</span><br> HTML and CSS course</li>
                         </ul>
                     </div>
@@ -113,7 +114,7 @@
                         <h3>Social Media apps</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum. Voluptatibus omnis distinctio.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>More</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -122,7 +123,7 @@
                         <h3>Web designing</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rerum. Voluptatibus omnis distinctio.
                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>More</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <!-- <div class="work img-3">
@@ -190,5 +191,19 @@
      }
 
     </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+
 </body>
 </html>
